@@ -3508,7 +3508,7 @@ public:
   this->d  = (double)(d);
   this->x2 = (double)(x + w);
   this->y2 = (double)(y + h);
-  this->y2 = (double)(z + d);
+  this->z2 = (double)(z + d);
   form = cartesian_box;
   Distance();
  }
