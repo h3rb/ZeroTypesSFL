@@ -3502,7 +3502,7 @@ public:
  void Cube( int x, int y, int z, int w, int h, int d ) {
   this->x  = (double)(x);
   this->y  = (double)(y);
-  this->y  = (double)(z);
+  this->z  = (double)(z);
   this->w  = (double)(w);
   this->h  = (double)(h);
   this->d  = (double)(d);
