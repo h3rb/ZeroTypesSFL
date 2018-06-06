@@ -8,5 +8,6 @@ Differences:
 - Certain non-core features removed
 - Addition of a Cartesian class that handles 2D rectangles and can also perform complex collision detection
 
-http://github.com/h3rb/ZeroTypes
-http://github.com/h3rb/ZeroTypesSFL
+Original project: http://github.com/h3rb/ZeroTypes
+
+Repo: http://github.com/h3rb/ZeroTypesSFL
