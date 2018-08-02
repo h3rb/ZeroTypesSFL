@@ -379,7 +379,7 @@ public:
  operator unsigned char *() { return &value; }
  Zbyte *operator()() { return this; }
  bool Get(const unsigned char bit)          { return ((value) & (1<<(bit))) ? true : false; }
- void Set(const unsigned char bit, const bool on) { if (on) value |= (bit); else value ^= (bit); }
+ void Set(const unsigned char bit, const bool on) { if (on) value |= (bit); else value &= ~(bit); }
  unsigned char operator()( unsigned char b ) { return value=b; }
  unsigned char operator()( unsigned int i ) { return value=(unsigned char)i; }
  unsigned char operator()( int i ) { return value=(unsigned char) i; }
