@@ -1,6 +1,8 @@
 # ZeroTypesSFL
 Single file library version of the ZeroTypes drop-in library
 
+Works with C++ 11 to C++ 17 and possibly 19, 20, 21, etc
+
 This repo has less features than ZeroTypes, but it's all in one file for convenience, portability and minimal footprint.
 
 Differences:
