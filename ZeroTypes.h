@@ -1989,39 +1989,16 @@ public:
   return endsWith(lower(value).c_str(),lower(string(s)).c_str());
  }
  bool Contains( const char *s ) {
-  if ( *s == '\0' ) { return true; }
-  char start=LOWER(*s);
-  rewind();
-  const char *w=this->Next();
-  while ( *w != '\0' ) {
-   if ( (*w) == (start) ) {
-    if ( !str_prefix_case(w,s) ) {
-     rewind();
-     return true;
-    }
-   }
-   w=this->Next();
-  }
-  rewind();
+  string needle=string(s);
+  if ( value.find(needle.c_str()) != std::string::npos ) return true;
   return false;
  }
  bool contains( const char *s ) {
-  if ( *s == '\0' ) { return true; }
-  char start=LOWER(*s);
-  rewind();
-  const char *w=this->Next();
-  while ( *w != '\0' ) {
-   if ( LOWER(*w) == (start) ) {
-    if ( !str_prefix(w,s) ) {
-     rewind();
-     return true;
-    }
-   }
-   w=this->Next();
-  }
-  rewind();
+  string needle=string(s);
+  string haystack=strtolower(value.c_str());
+  if ( haystack.find(needle.c_str()) != std::string::npos ) return true;
   return false;
- }
+ }	
  bool contains( char c ) {
   const char *p=value.c_str();
   while ( *p != '\0' ) {
