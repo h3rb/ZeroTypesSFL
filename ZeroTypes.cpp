@@ -3344,8 +3344,8 @@ String *Strings::findCaseless( string s ) {
 }
 
  String *Strings::findSubstring( const char *s ) {
-  FOREACH(String,sL) if ( !str_prefix(sL->s.c_str(),s) ) return sL; 
-  return null;
+  FOREACH(String, sL) { Zstring z=sL->s; if ( z.contains(s) ) return sL; }
+  return nullptr;
  }
 
  String *Strings::findNextSubstring( String *start, const char *s ) {
