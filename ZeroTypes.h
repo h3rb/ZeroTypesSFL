@@ -1995,7 +1995,8 @@ public:
  }
  bool contains( const char *s ) {
   string needle=string(s);
-  string haystack=strtolower(value.c_str());
+  string haystack=value;
+  std::transform(haystack.begin(), haystack.end(), haystack.begin(), [](unsigned char c){ return std::tolower(c); });  
   if ( haystack.find(needle.c_str()) != std::string::npos ) return true;
   return false;
  }	
