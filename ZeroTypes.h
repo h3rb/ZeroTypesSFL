@@ -3257,6 +3257,7 @@ public:
  String *findCaseless( string s );
  String *findCaseless( const char *s );
  String *findSubstring( const char *s );
+ String *contains( const char *s ) { return findSubstring(s); }
  String *findNextSubstring( String *start, const char *s );
  string concatToNextSubstring( String *start, const char *end );
  int IndexOf( String *s );
