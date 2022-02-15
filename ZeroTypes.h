@@ -8,10 +8,6 @@
  Copyright (c) 2007-2017
 
 */
-/*
- * Modifications copyright (c) 2017 Smith Micro Software, Inc.  All rights reserved.
- * Author: H. Gilliland (hgilliland@smithmicro.com)
- */
 #pragma once
 #pragma warning (disable:4100)
 #pragma warning (disable:4101)
